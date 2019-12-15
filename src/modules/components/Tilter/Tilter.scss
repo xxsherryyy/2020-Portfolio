@@ -1,0 +1,13 @@
+.tilter {
+    height: 70rem;
+    width: 50rem;
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-position: 85% 50%;
+    background-attachment: fixed;
+    border-radius: 5rem 0;
+
+    box-shadow: var(--shadow-dark);
+
+    // animation: hovering .5s ease-in-out;
+}

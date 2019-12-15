@@ -11,7 +11,7 @@ interface MainLayoutProps {
 
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
     return (
-        <div style={{ padding: 40}}>
+        <div style={{ padding: "2rem" }}>
             {/* <NavBar /> */}
             {children}
         </div>

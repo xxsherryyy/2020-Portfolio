@@ -1,14 +1,17 @@
 
 import React from "react";
-import styles from './CirclePhoto.module.scss';
+import './CirclePhoto.scss';
 
-const CirclePhoto = ({ url }) => {
+const CirclePhoto = ({ url, backText }) => {
     return (
-      <div
-        className={styles.circlePhoto}
-      >
-        {/* <img src={url} style={{ height: "100%", width: "100%", borderRadius: "50%"}}/> */}
-        <div className={styles.img} style={{ backgroundImage: `url(${url})`}}></div>
+      <div className="circlePhoto">
+        <div className="card">
+          <div className="card__side card__side--front" style={{ backgroundImage: `url(${url})` }} >
+          </div>
+          <div className="card__side card__side--back">
+            <h3 className="heading-tertiary">"{backText}"</h3>
+          </div>
+        </div>
       </div>
     );
 }

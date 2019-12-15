@@ -5,20 +5,25 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 500px;
+    // row-gap: 15rem;
     justify-items: center;
+    border-radius: 50px;
+    overflow: hidden;
 }
 
 .banner {
   position: relative;
-  height: 100%;
   width: 100%;
-  grid-column: 1 / 3;
-  background-color: rgba(purple, 0.5);
-  // box-shadow: 0 10px 20px rgba(#000000, 1.5);
+  height: 60vh;
+  grid-column: 1 / -1;
+  line-height: normal;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(#3feee6, 0.8),
+    rgba(#a64ac9, 1));
 
   &__content {
-    color: white;
+    color: var(--color-white);
     position: absolute;
     bottom: 0;
     left: 40%;
@@ -27,20 +32,84 @@
       font-size: 100px;
       display: inline-block;
       margin: 0;
+      animation: moveInRight .5s ease-in-out;
     }
 
     & > h2 {
       display: inline-block;
-      font-size: 25px;
+      font-size: 20px;
       margin: 0 0 0 40px;
+      animation: fadeIn 3s ease-in-out;
     }
   }
 
   &__photo {
     position: absolute;
-    bottom: -150px;
-    left: 20%;
+    bottom: -15rem;
+    left: 15%;
   }
+}
+
+.about-me {
+  grid-column: 1 / -1;
+  padding: 0 0 0 10rem;
+
+  & h3 {
+    display: block;
+    text-align: center;
+  }
+
+  &__content {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5rem;
+    padding: 0 5rem;
+
+    
+    // &--left {
+    // }
+    // &--right {
+    // }
+    &--bottom {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+.clip-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(#3feee6, 0.8),
+    rgba(purple, 0.8)),
+    url("../../../assets/images/sherry-full-body.jpeg");
+    clip-path: polygon(70% 0, 0 44%, 78% 100%);
+
+}
+
+.projects {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 50rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(#3feee6, 0.8),
+    rgba(purple, 0.8));
+}
+
+.footer {
+  grid-column: 1 / -1;
+  height: 30rem;
+  width: 100%;
+  background-color: var(--color-grey-dark);
+  color: var(--color-white);
 }
 
 .social {

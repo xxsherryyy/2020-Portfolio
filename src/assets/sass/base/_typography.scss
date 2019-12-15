@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /*font-size: 16px;*/
+    line-height: 1.7;
+    color: var(--color-grey-dark);
+}
+
+.heading-primary {
+    color: var(--color-white);
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: .5rem;
+        color: var(--color-secondary);
+    
+        // animation-name: moveInLeft;
+        // animation-duration: 1s;
+        // animation-timing-function: ease-out;
+        
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-family: 5rem;
+        }
+        /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+        // animation: moveInRight 1s ease-out;
+
+        @include respond(phone) {
+            letter-spacing: .5rem;
+        }
+    }
+}
+
+.heading-secondary {
+    font-size: 10rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+    // border-top: var(--color-secondary) .5rem solid;
+    // border-bottom: var(--color-secondary) .5rem solid;
+
+
+    // &--sub {
+    //     font-size: 5rem;
+    // }
+    
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+}
+
+.heading-tertiary {
+    font-size: var(--default-font-size);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: var(--default-font-size);
+    color: var(--color-grey-dark);
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
