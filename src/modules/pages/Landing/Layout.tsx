@@ -51,20 +51,19 @@ const LandingPageLayout = () => {
         </section>
         <section className="projects u-margin-top-huge">
           <h4 className="heading-secondary">What I've done</h4>
+          <ul>
+            <li><img src="https://s3-media0.fl.yelpcdn.com/bphoto/0hevwZW-KGiCVJvSp7Ujog/o.jpg" /></li>
+          </ul>
         </section>
         <footer className="footer">
           <h4 className="heading-secondary">Connect with me</h4>
-          
+          <ul className="social">
+            <li><a href="#" rel="noopener noreferrer" target="_blank"><FacebookLogo /></a></li>
+            <li><a href="#" rel="noopener noreferrer" target="_blank"><InstagramLogo /></a></li>
+            <li><a href="#" rel="noopener noreferrer" target="_blank"><TwitterLogo /></a></li>
+            <li><a href="#"><GoogleMail /></a></li>
+          </ul>
         </footer>
-        {/* <div className="footer">
-          
-        </div> */}
-        {/* <ul className="social">
-          <li><a href="#" rel="noopener noreferrer" target="_blank"><FacebookLogo /></a></li>
-          <li><a href="#" rel="noopener noreferrer" target="_blank"><InstagramLogo /></a></li>
-          <li><a href="#" rel="noopener noreferrer" target="_blank"><TwitterLogo /></a></li>
-          <li><a href="#"><GoogleMail /></a></li>
-        </ul> */}
      </main>
     );
 }

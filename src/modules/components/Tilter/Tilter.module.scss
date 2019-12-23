@@ -1,0 +1,30 @@
+.tilter {
+    height: 70rem;
+    width: 50rem;
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-position: 85% 50%;
+    background-attachment: fixed;
+    border-radius: 5rem 0;
+    padding: 2rem;
+
+    box-shadow: var(--shadow-dark);
+
+    // animation: hovering .5s ease-in-out;
+}
+
+
+.content {
+    height: 100%;
+    border-radius: 5rem 0;
+    color: var(--color-secondary);
+    border: var(--color-white) 2px solid;
+    position: relative;
+
+    & > h1 {
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        font-size: xx-large;
+    }
+}

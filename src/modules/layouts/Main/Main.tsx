@@ -4,16 +4,18 @@ import React from 'react';
 
 interface MainLayoutProps {
     children: React.ReactNode;
-
+    darkMode?: boolean;
 }
 
 // style = {{ display: "grid", gridTemplateColumns: "repeat(1, 1fr)" }}
 
-const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
+const MainLayout: React.FC<MainLayoutProps> = ({ children, darkMode }) => {
     return (
-        <div style={{ padding: "2rem" }}>
+        <div style={{ backgroundColor: darkMode ? "#333" : undefined }}>
             {/* <NavBar /> */}
-            {children}
+            <div style={{ padding: "2rem", backgroundColor: darkMode ? "#333" : undefined }}>
+                {children}
+            </div>
         </div>
     )
 }
