@@ -19,8 +19,8 @@
   line-height: normal;
   background-image: linear-gradient(
     to bottom,
-    rgba(#3feee6, 0.8),
-    rgba(#a64ac9, 1));
+    rgba(#287c78, 0.5),
+    rgba(#41caa8, 0.8));
 
   &__content {
     color: var(--color-white);
@@ -89,7 +89,7 @@
   background-image: linear-gradient(
     to right bottom,
     rgba(#3feee6, 0.8),
-    rgba(purple, 0.8)),
+    rgba(rgb(218, 137, 113), 0.8)),
     url("../../../assets/images/sherry-full-body.jpeg");
     clip-path: polygon(70% 0, 0 44%, 78% 100%);
 
@@ -102,16 +102,17 @@
   background-image: linear-gradient(
     to right bottom,
     rgba(#3feee6, 0.8),
-    rgba(purple, 0.8));
+    rgba(rgb(218, 137, 113), 0.8));
 
   // & > li {
 
   // }
+    // rgba( rgb(218, 137, 113), 0.8));
 }
 
 .footer {
   grid-column: 1 / -1;
-  height: 30rem;
+  height: 50rem;
   width: 100%;
   background-color: var(--color-grey-dark);
   color: var(--color-white);
