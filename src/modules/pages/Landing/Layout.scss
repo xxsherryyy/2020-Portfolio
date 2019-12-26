@@ -96,59 +96,85 @@
 }
 
 .projects {
+  text-align: center;
   grid-column: 1 / -1;
   width: 100%;
-  height: 50rem;
+  padding: 2rem 10rem;
   background-image: linear-gradient(
     to right bottom,
     rgba(#3feee6, 0.8),
     rgba(rgb(218, 137, 113), 0.8));
 
-  // & > li {
 
-  // }
-    // rgba( rgb(218, 137, 113), 0.8));
+    &__list {
+      height: 100%;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 20rem);
+      grid-template-rows: 20rem;
+      grid-gap: 5rem;
+
+      & li {
+        border-radius: 2rem;
+        overflow: hidden;
+      }
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
 }
 
 .footer {
   grid-column: 1 / -1;
-  height: 50rem;
   width: 100%;
+  padding: 5rem 10rem;
   background-color: var(--color-grey-dark);
   color: var(--color-white);
+  text-align: center;
 }
 
 .social {
-    list-style: none;
-    margin: auto 0;
-    padding: 0;
+  // width: 60%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
 
-  & > li {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    transition: all .4s;
-    margin: 0 1.5rem;
-    transition: all .2s;
-    // background-color: var(--color-primary-dark);
-    background-color: black;
+  & li {
     padding: 3rem;
-    border-radius: 50%;
-    // filter: grayscale(100%);
+    border-radius: 10rem;
+    transition: all .2s;
+    animation: btnGrow .2s ease-out .3s;
+    animation-fill-mode: backwards;
 
-    & svg {
-      filter: brightness(0) invert(1);
-      transition: all .4s;
+    svg {
+      fill: var(--color-primary);
+      height: 10rem;
+      width: 10rem;
     }
 
     &:hover {
-      transform:  scale(1.5);
-      // background-color: var(--color-white);
-      background-color: transparent;
-
-      & svg {
-        filter: brightness(1) invert(0);
-      }
+      transform: translateY(-1rem);
+      box-shadow: 0 1rem 1rem var(--color-primary);
+          svg {
+      fill: var(--color-tertiary);
+    }
     }
   }
+}
+
+
+@keyframes btnGrow {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

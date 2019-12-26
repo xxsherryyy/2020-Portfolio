@@ -4,7 +4,6 @@ import React from "react";
 import './Layout.scss';
 
 import { CirclePhoto, BgVideo, Tilter } from 'modules/components';
-import { ReactComponent as MediumLogo } from 'assets/svg/medium.svg';
 import { ReactComponent as Resume } from 'assets/svg/document.svg';
 import { ReactComponent as Linkedin } from 'assets/svg/linkedin.svg';
 import { ReactComponent as Github } from 'assets/svg/github.svg';
@@ -13,7 +12,6 @@ import { ReactComponent as Mail } from 'assets/svg/envelope.svg';
 import sherryFullBody from 'assets/images/sherry-full-body.jpeg';
 import WordsMp4 from 'assets/videos/Words.mp4';
 
-// import WordsWebm from 'assets/videos/Words.webm';
 
 const LandingPageLayout = () => {
     return (
@@ -26,15 +24,9 @@ const LandingPageLayout = () => {
           <header className="banner__content">
             <h1>Sherry Yang</h1>
             <h2> Web Developer • Designer • Consultant </h2>
-            
-            
-            <a target="_blank" href="https://www.behance.net/xxsherryyy" rel="noopener">
+            {/* <a target="_blank" href="https://www.behance.net/xxsherryyy" rel="noopener">
               
-            </a>
-            
-            
-
-            
+            </a> */}
           </header>
           <div className="banner__photo">
             <CirclePhoto backText="Sherry Berry" url={"https://media.licdn.com/dms/image/C5103AQE7tWcFZX0TUQ/profile-displayphoto-shrink_800_800/0?e=1580947200&v=beta&t=MsbZckyx3T_msS8J5F67sIOLiFJDf7pG_5uNl18xeRs"} />
@@ -62,37 +54,40 @@ const LandingPageLayout = () => {
         </section>
         <section className="projects u-margin-top-huge">
           <h4 className="heading-secondary">What I've done</h4>
-          <ul>
-            <li><img src="https://s3-media0.fl.yelpcdn.com/bphoto/0hevwZW-KGiCVJvSp7Ujog/o.jpg" /></li>
+          <ul className="projects__list">
+            <li><img alt="Title Max" src="https://s3-media0.fl.yelpcdn.com/bphoto/0hevwZW-KGiCVJvSp7Ujog/o.jpg" /></li>
+            <li><img alt="Title Max" src="https://s3-media0.fl.yelpcdn.com/bphoto/0hevwZW-KGiCVJvSp7Ujog/o.jpg" /></li>
+            <li><img alt="Title Max" src="https://s3-media0.fl.yelpcdn.com/bphoto/0hevwZW-KGiCVJvSp7Ujog/o.jpg" /></li>
+            <li><img alt="Title Max" src="https://s3-media0.fl.yelpcdn.com/bphoto/0hevwZW-KGiCVJvSp7Ujog/o.jpg" /></li>
+            <li><img alt="Title Max" src="https://s3-media0.fl.yelpcdn.com/bphoto/0hevwZW-KGiCVJvSp7Ujog/o.jpg" /></li>
+            <li><img alt="Title Max" src="https://s3-media0.fl.yelpcdn.com/bphoto/0hevwZW-KGiCVJvSp7Ujog/o.jpg" /></li>
+            <li><img alt="Title Max" src="https://s3-media0.fl.yelpcdn.com/bphoto/0hevwZW-KGiCVJvSp7Ujog/o.jpg" /></li>
           </ul>
         </section>
         <footer className="footer">
           <h4 className="heading-secondary">Connect with me</h4>
-          {/* <ul className="social">
-            <li><a href="#" rel="noopener noreferrer" target="_blank"><FacebookLogo /></a></li>
-            <li><a href="#" rel="noopener noreferrer" target="_blank"><InstagramLogo /></a></li>
-            <li><a href="#" rel="noopener noreferrer" target="_blank"><TwitterLogo /></a></li>
-            <li><a href="#"><GoogleMail /></a></li>
-          </ul> */}
-          <div>
-          <a target="_blank" href="https://medium.com/@xxsherryyy">
-            <MediumLogo />
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/sherry-x-yang/" rel="noopener">
-            <Linkedin />
-          </a>
-          <a target="_blank" href="https://github.com/xxsherryyy" rel="noopener">
-            <Github />
-          </a>
-          <a target="_blank" href="mailto: sherryxxyang@gmail.com">
-            <Mail />
-          </a>
-          <a target="_blank" href="/../assets/images/Sherry Yang Resume.pdf" download="Sherry X Yang Resume">
-            <Resume />
-          </a>
-          
-          
-          </div>
+            <ul className="social">
+              <li>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sherry-x-yang/">
+                  <Linkedin />
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/xxsherryyy">
+                  <Github />
+                </a>
+              </li>
+              <li>
+                <a target="_blank"  rel="noopener noreferrer" href="mailto: sherryxxyang@gmail.com">
+                  <Mail />
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener noreferrer" href="/../assets/images/Sherry Yang Resume.pdf" download="Sherry X Yang Resume">
+                  <Resume />
+                </a>
+              </li>
+            </ul>
         </footer>
      </main>
     );
