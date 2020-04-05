@@ -9,7 +9,7 @@ const Tilter = ({ url }) => {
       <div className={styles.tilter} style={{ backgroundImage: `url(${url})` }}>
         <Tilt  style={{ height: "100%", width: "100%" }} options={{ max: 10, scale: 1 }}>
           <div className={styles.content}>
-            <h1>Sherry Berry</h1>
+            <h1>Front End Developer</h1>
           </div>
         </Tilt>
       </div>

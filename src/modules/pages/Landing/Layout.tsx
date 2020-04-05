@@ -3,14 +3,18 @@ import React from "react";
 
 import './Layout.scss';
 
-import { CirclePhoto, BgVideo, Tilter } from 'modules/components';
+import { CirclePhoto, BgVideo, Tilter, Projects } from 'modules/components';
 import { ReactComponent as Resume } from 'assets/svg/document.svg';
 import { ReactComponent as Linkedin } from 'assets/svg/linkedin.svg';
 import { ReactComponent as Github } from 'assets/svg/github.svg';
 import { ReactComponent as Mail } from 'assets/svg/envelope.svg';
+import vue from 'assets/svg/vue.svg';
+import react from 'assets/svg/react.svg';
 
 import sherryFullBody from 'assets/images/sherry-full-body.jpeg';
 import WordsMp4 from 'assets/videos/Words.mp4';
+import bio from 'assets/images/bio.jpg';
+import node from 'assets/images/node.jpeg';
 
 
 const LandingPageLayout = () => {
@@ -29,7 +33,7 @@ const LandingPageLayout = () => {
             </a> */}
           </header>
           <div className="banner__photo">
-            <CirclePhoto backText="Sherry Berry" url={"https://media.licdn.com/dms/image/C5103AQE7tWcFZX0TUQ/profile-displayphoto-shrink_800_800/0?e=1580947200&v=beta&t=MsbZckyx3T_msS8J5F67sIOLiFJDf7pG_5uNl18xeRs"} />
+            <CirclePhoto backText="Sherry Berry" url={bio} />
           </div>
         </div>
         <section className="about-me">
@@ -38,32 +42,32 @@ const LandingPageLayout = () => {
             <aside className="about-me__content--left">
               <h4 className="heading-primary--main">{`< Coder />`}</h4>
               <p className="paragraph">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis sequi expedita repudiandae numquam ullam nemo blanditiis voluptas ipsum autem, obcaecati ipsa aliquid ducimus assumenda quasi laboriosam alias adipisci minima voluptates? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis sequi expedita repudiandae numquam ullam nemo blanditiis voluptas ipsum autem, obcaecati ipsa aliquid ducimus assumenda quasi laboriosam alias adipisci minima voluptates?
+              Hi, I'm Sherry a jill of all trades.
+              I have a multidisciplinary background; B.S. Molecular Biology, Biomedical Electrial Engineering Reasearch, Full-Stack Development Certificate, and a professional history of service oriented work.
+              <br/> 
+              How did I go from science to coding? My journey into web development started in college where I became inspired to explore how technology plays an important role in society by a course called Science Technology and Institutions.
+              I got a taste of concepts such as IOT, Smart Cities and platform technologies where we discected the evolution of technology from the invention of electricity and the birth of the world wide web to future 
+              <br/>
+              <b> React | Vue | Node  </b>
+              <p className="skills">
+                
+             <img alt='react' src={react}/><img alt='vue' src={vue}/> <img alt='node' src={node}/>
+              </p>
+              
               </p>
             </aside>
             <aside className="about-me__content--right">
               <Tilter url={sherryFullBody}/>
             </aside>
             <article className="about-me__content--bottom">
-              <h4 className="heading-primary--main">And Dog Lover</h4>
+              <h4 className="heading-primary--main">Avid Traveler</h4>
               <p className="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis sequi expedita repudiandae numquam ullam nemo blanditiis voluptas ipsum autem, obcaecati ipsa aliquid ducimus assumenda quasi laboriosam alias adipisci minima voluptates? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis sequi expedita repudiandae numquam ullam nemo blanditiis voluptas ipsum autem, obcaecati ipsa aliquid ducimus assumenda quasi laboriosam alias adipisci minima voluptates?
+                 aliquid ducimus assumenda quasi laboriosam alias adipisci minima voluptates?
               </p>
             </article>
           </div>
         </section>
-        <section className="projects u-margin-top-huge">
-          <h4 className="heading-secondary">What I've done</h4>
-          <ul className="projects__list">
-            <li><img alt="Title Max" src="https://s3-media0.fl.yelpcdn.com/bphoto/0hevwZW-KGiCVJvSp7Ujog/o.jpg" /></li>
-            <li><img alt="Title Max" src="https://s3-media0.fl.yelpcdn.com/bphoto/0hevwZW-KGiCVJvSp7Ujog/o.jpg" /></li>
-            <li><img alt="Title Max" src="https://s3-media0.fl.yelpcdn.com/bphoto/0hevwZW-KGiCVJvSp7Ujog/o.jpg" /></li>
-            <li><img alt="Title Max" src="https://s3-media0.fl.yelpcdn.com/bphoto/0hevwZW-KGiCVJvSp7Ujog/o.jpg" /></li>
-            <li><img alt="Title Max" src="https://s3-media0.fl.yelpcdn.com/bphoto/0hevwZW-KGiCVJvSp7Ujog/o.jpg" /></li>
-            <li><img alt="Title Max" src="https://s3-media0.fl.yelpcdn.com/bphoto/0hevwZW-KGiCVJvSp7Ujog/o.jpg" /></li>
-            <li><img alt="Title Max" src="https://s3-media0.fl.yelpcdn.com/bphoto/0hevwZW-KGiCVJvSp7Ujog/o.jpg" /></li>
-          </ul>
-        </section>
+        <Projects/>
         <footer className="footer">
           <h4 className="heading-secondary">Connect with me</h4>
             <ul className="social">
