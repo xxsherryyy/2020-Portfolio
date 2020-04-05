@@ -1,23 +1,16 @@
 
-.circlePhoto {
-    padding: .1rem;
-    border-radius: 50%;
-    background-color: var(--color-white);
-    border: 30px solid white;
-}
-
-.photo {
+.card {
 
     // FUNCTIONALITY
-    perspective: 150rem;
+    perspective: 100rem;
     position: relative;
-    height: 30rem;
-    width: 30rem;
+    height: 20rem;
+    width: 20rem;
     
     &__side {
         height: 100%;
         width: 100%;
-        border-radius: 50%;
+ 
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -27,8 +20,6 @@
         box-shadow: var(--shadow-dark);
 
         &--front {
-          background-color: var(--color-white);
-          background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
         }
@@ -44,8 +35,7 @@
             font-weight: lighter;
             color: var(--color-white);
             position: absolute;
-            top: 45%;
-            left: 25%;
+           
           }
         }
     }
@@ -58,4 +48,4 @@
     &:hover &__side--back {
         transform: rotateY(0);
     }
-  }
+}

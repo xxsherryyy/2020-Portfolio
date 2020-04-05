@@ -27,13 +27,11 @@ const LandingPageLayout = () => {
           />
           <header className="banner__content">
             <h1>Sherry Yang</h1>
-            <h2> Web Developer • Designer • Consultant </h2>
-            {/* <a target="_blank" href="https://www.behance.net/xxsherryyy" rel="noopener">
-              
-            </a> */}
+            <h2> Web Developer • <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/xxsherryyy" >Designer</a> • Consultant </h2>
+          
           </header>
           <div className="banner__photo">
-            <CirclePhoto backText="Sherry Berry" url={bio} />
+            <CirclePhoto backText="Sherry Yang" url={bio} />
           </div>
         </div>
         <section className="about-me">

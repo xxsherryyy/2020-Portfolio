@@ -91,3 +91,11 @@ body {
         margin-bottom: 3rem;
     }
 }
+a {
+    color: var(--color-white);
+    text-decoration: none;
+
+    :hover {
+        color: var(--color-white);
+    }
+}
