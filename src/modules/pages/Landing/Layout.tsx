@@ -47,12 +47,13 @@ const LandingPageLayout = () => {
               I got a taste of concepts such as IOT, Smart Cities and platform technologies where we discected the evolution of technology from the invention of electricity and the birth of the world wide web to future 
               <br/>
               <b> React | Vue | Node  </b>
-              <p className="skills">
+             
+              </p> 
+              <div className="skills">
                 
              <img alt='react' src={react}/><img alt='vue' src={vue}/> <img alt='node' src={node}/>
-              </p>
+              </div>
               
-              </p>
             </aside>
             <aside className="about-me__content--right">
               <Tilter url={sherryFullBody}/>
