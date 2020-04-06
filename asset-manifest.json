@@ -1,29 +1,35 @@
 {
   "files": {
-    "main.css": "/2020-Portfolio/static/css/main.f75485d9.chunk.css",
-    "main.js": "/2020-Portfolio/static/js/main.e0b5814e.chunk.js",
-    "main.js.map": "/2020-Portfolio/static/js/main.e0b5814e.chunk.js.map",
+    "main.css": "/2020-Portfolio/static/css/main.a27b6090.chunk.css",
+    "main.js": "/2020-Portfolio/static/js/main.bfa4de3f.chunk.js",
+    "main.js.map": "/2020-Portfolio/static/js/main.bfa4de3f.chunk.js.map",
     "runtime-main.js": "/2020-Portfolio/static/js/runtime-main.58a681e1.js",
     "runtime-main.js.map": "/2020-Portfolio/static/js/runtime-main.58a681e1.js.map",
-    "static/js/2.7667cc03.chunk.js": "/2020-Portfolio/static/js/2.7667cc03.chunk.js",
-    "static/js/2.7667cc03.chunk.js.map": "/2020-Portfolio/static/js/2.7667cc03.chunk.js.map",
+    "static/js/2.e69e9fcb.chunk.js": "/2020-Portfolio/static/js/2.e69e9fcb.chunk.js",
+    "static/js/2.e69e9fcb.chunk.js.map": "/2020-Portfolio/static/js/2.e69e9fcb.chunk.js.map",
     "index.html": "/2020-Portfolio/index.html",
-    "precache-manifest.f8c3961039257bc9bf5d9025e847a22f.js": "/2020-Portfolio/precache-manifest.f8c3961039257bc9bf5d9025e847a22f.js",
+    "precache-manifest.3ad5e13e38e6a0bf41c0e432eddbf12b.js": "/2020-Portfolio/precache-manifest.3ad5e13e38e6a0bf41c0e432eddbf12b.js",
     "service-worker.js": "/2020-Portfolio/service-worker.js",
-    "static/css/main.f75485d9.chunk.css.map": "/2020-Portfolio/static/css/main.f75485d9.chunk.css.map",
-    "static/js/2.7667cc03.chunk.js.LICENSE": "/2020-Portfolio/static/js/2.7667cc03.chunk.js.LICENSE",
+    "static/css/main.a27b6090.chunk.css.map": "/2020-Portfolio/static/css/main.a27b6090.chunk.css.map",
+    "static/js/2.e69e9fcb.chunk.js.LICENSE": "/2020-Portfolio/static/js/2.e69e9fcb.chunk.js.LICENSE",
     "static/media/Words.mp4": "/2020-Portfolio/static/media/Words.2459e4e3.mp4",
+    "static/media/bio.jpg": "/2020-Portfolio/static/media/bio.4c92e0fb.jpg",
+    "static/media/detective.png": "/2020-Portfolio/static/media/detective.d35d37ba.png",
     "static/media/document.a74bfe23.svg": "/2020-Portfolio/static/media/document.a74bfe23.svg",
     "static/media/envelope.0845ac78.svg": "/2020-Portfolio/static/media/envelope.0845ac78.svg",
     "static/media/github.5665018a.svg": "/2020-Portfolio/static/media/github.5665018a.svg",
+    "static/media/hp.jpg": "/2020-Portfolio/static/media/hp.5bd597f0.jpg",
     "static/media/linkedin.393e60df.svg": "/2020-Portfolio/static/media/linkedin.393e60df.svg",
-    "static/media/medium.ab06f8a1.svg": "/2020-Portfolio/static/media/medium.ab06f8a1.svg",
-    "static/media/Layout.scss": "/2020-Portfolio/static/media/sherry-full-body.5b5c127c.jpeg"
+    "static/media/primesource.jpg": "/2020-Portfolio/static/media/primesource.9ae78703.jpg",
+    "static/media/ratethatdev.png": "/2020-Portfolio/static/media/ratethatdev.9c9588e3.png",
+    "static/media/react.svg": "/2020-Portfolio/static/media/react.4009eef3.svg",
+    "static/media/Layout.scss": "/2020-Portfolio/static/media/sherry-full-body.5b5c127c.jpeg",
+    "static/media/vue.svg": "/2020-Portfolio/static/media/vue.60dfaadb.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.58a681e1.js",
-    "static/js/2.7667cc03.chunk.js",
-    "static/css/main.f75485d9.chunk.css",
-    "static/js/main.e0b5814e.chunk.js"
+    "static/js/2.e69e9fcb.chunk.js",
+    "static/css/main.a27b6090.chunk.css",
+    "static/js/main.bfa4de3f.chunk.js"
   ]
 }
