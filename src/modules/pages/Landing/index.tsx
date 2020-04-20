@@ -4,12 +4,18 @@ import LandingPageLayout from './Layout';
 
 
 interface LandingPageProps {}
-
 class LandingPage extends Component<LandingPageProps> {
-  render() {
+  componentDidMount() {
+    console.log("Componenet Did Mount")
+  }
+  render() { 
+       
     return (
+      
       <MainLayout>
-        <LandingPageLayout />
+       
+        <LandingPageLayout/> 
+         
       </MainLayout>
     );
   }

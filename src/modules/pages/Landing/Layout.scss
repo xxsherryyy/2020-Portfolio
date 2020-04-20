@@ -110,9 +110,9 @@
       height: 100%;
       list-style: none;
       display: grid;
-      grid-template-columns: repeat(auto-fill, 20rem);
-      grid-template-rows: 20rem;
-      grid-gap: 5rem;
+      grid-template-columns: repeat(auto-fill, 40rem);
+      grid-template-rows: 40rem;
+      grid-gap: 6rem;
 
       & li {
         border-radius: 2rem;

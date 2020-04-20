@@ -49,6 +49,7 @@ const LandingPageLayout = () => {
               <b> React | Vue | Node  </b>
              
               </p> 
+           
               <div className="skills">
                 
              <img alt='react' src={react}/><img alt='vue' src={vue}/> <img alt='node' src={node}/>
@@ -66,7 +67,9 @@ const LandingPageLayout = () => {
             </article>
           </div>
         </section>
+
         <Projects/>
+        
         <footer className="footer">
           <h4 className="heading-secondary">Connect with me</h4>
             <ul className="social">
