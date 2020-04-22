@@ -40,11 +40,12 @@ const LandingPageLayout = () => {
             <aside className="about-me__content--left">
               <h4 className="heading-primary--main">{`< Coder />`}</h4>
               <p className="paragraph">
-              Hi, I'm Sherry a jill of all trades.
+              <b>Hi, I'm Sherry, a jill of all trades.</b>
+              <br/>
               I have a multidisciplinary background; B.S. Molecular Biology, Biomedical Electrial Engineering Reasearch, Full-Stack Development Certificate, and a professional history of service oriented work.
               <br/> 
-              How did I go from science to coding? My journey into web development started in college where I became inspired to explore how technology plays an important role in society by a course called Science Technology and Institutions.
-              I got a taste of concepts such as IOT, Smart Cities and platform technologies where we discected the evolution of technology from the invention of electricity and the birth of the world wide web to future 
+              How did I go from science to coding? My journey into web development started in college where I became inspired to explore how technology plays an important role in society through a course called Science Technology and Institutions.
+              I got a taste of concepts such as IOT, Smart Cities and platform technologies where we disscected the evolution of technology from the invention of electricity and the birth of the world wide web, to future immersions in our society, culture and economy.
               <br/>
               <b> React | Vue | Node  </b>
              
@@ -69,7 +70,7 @@ const LandingPageLayout = () => {
         </section>
 
         <Projects/>
-        
+
         <footer className="footer">
           <h4 className="heading-secondary">Connect with me</h4>
             <ul className="social">
