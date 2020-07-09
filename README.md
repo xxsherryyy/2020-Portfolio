@@ -1,5 +1,5 @@
 # 2020-Portfolio
-This is my professional portfolio using AWS and React
+This is my professional portfolio using Typescript and React
 
 ##Technologies Used
 Brew for MacOS
